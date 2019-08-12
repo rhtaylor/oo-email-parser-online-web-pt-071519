@@ -11,7 +11,7 @@ class EmailAddressParser
   def parse
       nu = []
       nu << emails.scan(/\S+[.com]/)
-      nu.flatten.uniq!
+      nu.flatten.uniq
     # if emails.include? ","
     #   x = emails.split(",")
     #   y = x.map do |a|

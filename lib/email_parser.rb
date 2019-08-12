@@ -9,9 +9,9 @@ class EmailAddressParser
   end
   attr_accessor :emails
   def parse
-
-     emails.scan(/^\S+[.com]/)
-
+    nu = []
+     nu << emails.scan(/^\S+[.com]/)
+     nu
      binding.pry
     # if emails.include? ","
     #   x = emails.split(",")
